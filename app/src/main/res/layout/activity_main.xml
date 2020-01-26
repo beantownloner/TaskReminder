@@ -1,0 +1,111 @@
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tab_header"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal">
+
+                <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginStart="@dimen/tabs_padding"
+                    android:layout_marginLeft="@dimen/tabs_padding"
+                    android:layout_weight="0.5"
+                    android:background="?attr/colorPrimary"
+                    app:pstsIndicatorColor="@color/NotificationTitle"
+                    app:pstsTabPaddingLeftRight="26dp" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"
+                    android:theme="@style/Toolbar"
+                    app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize" >
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <View
+                android:id="@+id/toolbar_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_shadow_height"
+                android:layout_marginTop="?attr/actionBarSize"
+            android:background="@drawable/toolbar_shadow"/>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <!-- linearLayour for fab button-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end|left"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add_white_24dp"
+          />
+    </LinearLayout>   <!-- LinearLayour for AdView-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            ads:adUnitId="@string/banner_ad_unit_id_choice"
+            app:adSize="BANNER"></com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingTop="2dp">
+
+    <TextView
+        android:id="@+id/header_separator"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_margin"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/textGreyHeader"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card"
+        android:gravity="fill_vertical|fill_horizontal|fill"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                android:layout_width="@dimen/widget_icon_size"
+                android:layout_height="@dimen/widget_icon_size"
+                android:layout_gravity="center_vertical|center"
+                android:adjustViewBounds="true"
+
+                android:src="@drawable/widget_circle" />
+
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical|center"
+                android:src="@drawable/ic_notifications_white_24dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_notification_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:paddingEnd="3dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_notification_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="end"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

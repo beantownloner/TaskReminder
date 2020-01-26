@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "785789156370",
+    "firebase_url": "https://task-reminder-project.firebaseio.com",
+    "project_id": "task-reminder-project",
+    "storage_bucket": "task-reminder-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785789156370:android:4273120a6410c8067faccb",
+        "android_client_info": {
+          "package_name": "com.beantownloner.taskreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785789156370-6a776t6cm9h577cpfevu259mc61gonin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9_xdjT7JKiNeAQLPHkXwCK3kTWsUcCb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785789156370-6a776t6cm9h577cpfevu259mc61gonin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -75,5 +75,8 @@
     <string name="add_widget">Add widget</string>
     <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="banner_ad_unit_id_choice">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="notification_date">Notification Date</string>
+    <string name="show_hint">Show number of times to repeat</string>
+    <string name="no_reminders">No Reminders</string>
 
 </resources>

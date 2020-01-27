@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
     android:clipChildren="false"
     android:foreground="?android:attr/selectableItemBackground"
     android:transitionName="cardTransition"
@@ -28,7 +28,8 @@
                 android:id="@+id/notification_circle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/circle"/>
+                android:importantForAccessibility="no"
+                android:src="@drawable/circle" />
 
             <ImageView
                 android:id="@+id/notification_icon"
@@ -43,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="12dp"
+
             android:paddingStart="12dp">
 
             <LinearLayout
@@ -55,7 +56,7 @@
                     android:id="@+id/notification_title"
                     android:layout_height="wrap_content"
                     android:layout_width="0dp"
-                    android:paddingRight="3dp"
+
                     android:paddingEnd="3dp"
                     android:layout_weight="1"
                     android:textColor="@android:color/black"

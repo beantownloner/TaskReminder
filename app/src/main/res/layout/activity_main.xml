@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:layout_marginStart="@dimen/tabs_padding"
-                    android:layout_marginLeft="@dimen/tabs_padding"
+
                     android:layout_weight="0.5"
                     android:background="?attr/colorPrimary"
                     app:pstsIndicatorColor="@color/NotificationTitle"
@@ -87,8 +87,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end|left"
             android:layout_margin="@dimen/fab_margin"
-            android:src="@drawable/ic_add_white_24dp"
-          />
+            android:contentDescription="@string/add_reminder"
+            android:src="@drawable/ic_add_white_24dp" />
     </LinearLayout>   <!-- LinearLayour for AdView-->
     <LinearLayout
         android:layout_weight="1"

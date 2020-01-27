@@ -18,7 +18,7 @@
             android:layout_marginBottom="@dimen/widget_margin"
             android:background="@color/primary"
             android:gravity="left|center_vertical"
-            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
             android:textColor="@color/NotificationTitle"
             android:textSize="@dimen/secondary_text_size"
             android:textStyle="bold" />
@@ -44,11 +44,12 @@
 
         <ImageView
             android:id="@+id/empty_icon"
-            android:src="@drawable/ic_notifications_black_empty"
-            android:alpha="0.1"
-            android:paddingBottom="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:alpha="0.1"
+            android:contentDescription="@string/no_active"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_notifications_black_empty" />
 
         <TextView
             android:id="@+id/empty_text"
